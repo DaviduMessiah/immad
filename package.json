@@ -15,11 +15,11 @@
     "karma-junit-reporter": "^0.2.2"
   },
   "scripts": {
-	"preinstall": "npm install",
-    "postinstall": "bower install",    
-	
+    "postinstall": "bower install",
+
+    "prestart": "npm install",
     "start": "http-server -a localhost -p 80",
-	
+
     "pretest": "npm install",
     "test": "karma start test/karma.conf.js",
     "test-single-run": "karma start test/karma.conf.js  --single-run",
